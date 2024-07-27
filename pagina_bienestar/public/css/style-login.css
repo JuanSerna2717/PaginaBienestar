@@ -1,0 +1,407 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+}
+
+
+@media screen and (max-width: 767px){
+    body{
+        height: 100vh;
+        width: 100vw;
+    }
+}
+
+.principal{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+}
+
+.background{
+    height: 70%;
+    width: 100%;
+    background-color: white;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+}
+
+footer{
+    height: 50%;
+    width: 100%;
+    background-color:#00af00;
+    position: absolute;
+    z-index: -2;
+    bottom: 0;
+}
+
+.login{
+    border: solid 2px #00af00;
+    border-radius: 17px;
+    max-width: 1000px;
+    min-width: 320px;
+    height: 400px;
+    background-color: #ffff;
+    margin-top: 5px;
+}
+
+
+
+.logoSena{
+    height: 120px;
+    width: 120px;
+    border-radius: 10px;
+}
+.logoSena img{
+    width: 100%;
+    height: 100%;
+}
+h2{
+    text-align: center;
+    margin-top: 10px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.roles p{
+    display: inline;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    color: white;
+}
+/* /////////////////CONTENEDOR SUPERIOR ROLES/////////////////
+.roles{
+    display: flex;
+    width: 100%;
+    height: 12%;
+    background-color: black;
+}
+/* /////////////////Contenedor Usuario/////////////////
+.roles .contenedorUsuario{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid gray;
+    position: relative;
+    overflow: hidden;
+}
+
+.roles .contenedorUsuario:hover{
+    border: 3px solid #00af00;
+    background-color: black;
+    transform: scale(1.1);
+}
+
+.roles .contenedorUsuario a{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+/* /////////////////Contenedor Administrador/////////////////
+.roles .contenedorAdministrador{
+    width:45%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid gray;
+
+}
+.roles .contenedorAdministrador:hover{
+    border: 3px solid #00af00;
+    background-color: black;
+    transform: scale(1.1);
+}
+
+.roles .contenedorAdministrador a{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+/* /////////////////Contenedor Bienestar/////////////////
+.roles .contenedorBienestar{
+    width: 30%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.roles .contenedorBienestar:hover{
+    border: 3px solid #00af00;
+    background-color: black;
+    transform: scale(1.1);
+}
+.roles .contenedorBienestar a{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+
+/* /////////////////SEPARADOR/////////////////
+.separador{
+    width: 100%;
+    height: 1%;
+    background-color: #e8e8e8;
+}
+*/
+
+
+/* /////////////////INGRESO DE DATOS/////////////////*/
+.span{
+    width: 80%;
+    display: flex;
+    justify-content:start;
+    font-size: 14px;
+}
+
+.datos{
+    width: 100%;
+    height: 60%;
+}
+
+.datos form{
+    width: 100%;
+    height: 100%;
+}
+/* /////////////////////////////////////////////////// */
+.textoLogin{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.textoLogin h3{
+    font-weight: bold;
+}
+/* /////////////////Selector Documento/////////////////*/
+.selectorDocumento{
+    width: 100%;
+    height: 33.3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+}
+
+.selectorDocumento select{
+    height:50%;
+    width: 83%;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background-color: #E6E1E1;
+    padding: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    color: #9F9A9A;
+}
+.selectorDocumento select option{
+    background-color: white;
+    color: black;
+    
+}
+/* ////////////////////////////////////////////////////// */
+
+/* /////////////////Input Nombre de Usuario/////////////////*/
+
+.numeroUsuario{
+    width: 100%;
+    height: 33.3%;
+    gap: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputUsuario{
+    height:50%;
+    width: 79.87%;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding-left: 6px;
+    background-color: #E6E1E1;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    align-items: center;
+    color: black;
+    gap:8px;
+}
+.inputUsuario input{
+    outline: none;
+    border: none;
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    background-color: transparent;
+    font-weight: bold;
+    color: black;
+}
+
+/* //////////////////////////////////////////////////////// */
+
+/* /////////////////Input Contraseña/////////////////*/
+.contraseña{
+    width: 100%;
+    height: 33.3%;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    align-items: center;
+    justify-content: center;
+}
+
+input .form-control {
+    color: black;
+
+}
+.inputContraseña{
+    height:50%;
+    width: 79.87%;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background-color: #E6E1E1;
+    padding-left: 6px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #9F9A9A;
+}
+.inputContraseña input{
+    outline: none;
+    font-family: "Montserrat", sans-serif;
+    border: none;
+    font-size: 15px;
+    background-color: transparent;
+    font-weight: bold;
+    color: black;
+
+}
+/* /////////////////////////////////////////////////// */
+
+/* ///////////ICONOS INPUTS///////////// */
+
+.contenedorLogo{
+    width: 28.36px;
+    height: 28.36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedorLogo .logo{
+    width: 27px;
+    height: 27px;
+}
+
+/* ////////////////////////////////// */
+
+
+.forgot-password{
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    
+
+}
+.forgot-password a{
+    margin-top: 20px;
+    color: #00af00;
+    text-decoration: none;
+    font-size: 17px;
+    font-family:  "Montserrat", sans-serif;
+  
+
+}
+
+
+
+
+input{
+    width: 265px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: #00af00;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-size: medium;
+    font-weight: bold;
+
+}
+
+
+.boton-ingresar:hover{
+    cursor: pointer;
+}
+.boton-ingresar{
+    margin-top: 25px;
+}
+
+.boton-crear-cuenta{
+   margin-top: 20px;
+}
+
+.boton-crear-cuenta:hover{
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    width: 265px; /* Ajusta el ancho del input */
+    height: 40px; /* Ajusta la altura del input */
+    font-size: 16px; /* Ajusta el tamaño de la fuente */
+    padding: 10px; /* Agrega un poco de padding para que se vea más grande */
+    border-radius: 25px; /* Aumenta el radio de la esquina para que se vea más redondeado */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  a.boton-crear-cuenta {
+    width: 250px;
+    height: 40px;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #00af00;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  a.boton-crear-cuenta:hover {
+    cursor: pointer;
+  }

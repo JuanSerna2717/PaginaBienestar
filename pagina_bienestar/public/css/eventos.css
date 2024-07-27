@@ -1,0 +1,242 @@
+body{
+    overflow-x: hidden;
+}
+
+
+
+main{
+    width: 100vw;
+    max-width: 1366px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: auto;
+    
+}
+
+
+main .tituloPagina{
+    width: 90%;
+    height: max-content;
+    text-align: center;
+    margin: auto;
+}
+main .tituloPagina span{
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 1px 0px 7px rgba(0,0,0,0.6);
+}
+main section{
+    background: linear-gradient(60deg, rgba(67, 0, 118, 1) 18%, rgba(14, 185, 193, 1) 77%) ;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 27px;
+    border: 3px solid rgba(14, 185, 193, 1);
+    box-shadow: 4px 1px 30px 10px rgba(0,0,0,0.22);
+}
+main section span{
+    height: max-content;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    
+    letter-spacing: 2px;
+
+}
+
+main section .contenedorSpan{
+    width: 60%;
+    height: max-content;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 19px 1px rgba(0, 0, 0, 0.8);
+ 
+
+}
+
+
+main section article{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+main section article .contenedorImagen{
+    width: 30%;
+    min-width: 300px;
+    height: 300px;
+    /* background-color: rgb(158, 138, 138); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+}
+
+main section  article .contenedorImagen img{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: .5s;
+    cursor: pointer;
+    box-shadow: 1px 1px 19px 1px rgba(0, 0, 0, 0.8);
+    
+}
+
+main section article .contenedorImagen img:hover{
+    transform: scale(.95);
+}
+
+main section article .contenedorTexto{
+    width: 46%;
+    min-width: 330px;
+    height: 300px;
+    /* background-color: rgba(100, 236, 213, 0.356); */
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+main section article .contenedorTexto .tituloTexto{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+main section article .contenedorTexto .tituloTexto span{
+    font-size: 18px;
+    width: max-content;
+    height: max-content;
+    background-color: white;
+    border-radius: 20px;
+    padding: 0 5px 0 5px;
+    box-shadow: 1px 1px 19px 1px rgba(0, 0, 0, 0.8);
+}
+
+main section article .contenedorTexto .contenidoTexto{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+main section article .contenedorTexto .contenidoTexto span{
+    font-size: 18px;
+    color: white;
+    width: max-content;
+    height: max-content;
+    padding: 0 5px 0 5px;
+    text-shadow: 1px 0px 7px rgba(0, 0, 0, 0.8);
+}
+
+
+
+main section article .contenedorBoton{
+    width: 10%;
+    min-width: 150px;
+    height: 300px;
+    /* background-color: rgb(231, 118, 118); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+main section article .contenedorBoton button{
+    width: 160px;
+    height: 45px;
+    background-color: rgba(67, 0, 118, 1);
+    border:none;
+    color: wheat;
+    border-radius: 27px;
+    font-weight: bold;
+    transition: .5s;
+    cursor: pointer;
+}
+
+main section article .contenedorBoton a{
+    width: 165px;
+    height: 45px;
+    background-color: rgba(67, 0, 118, 1);
+    border-radius: 27px;
+    font-weight: bold;
+    color: black;
+    color: wheat;
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+    cursor: pointer;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+main section article .contenedorBoton a:hover{
+    transform: scale(1.1);
+}
+main section article .contenedorBoton button:hover{
+    transform: scale(1.1);
+    
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+    main section{
+        width: 80%;
+    }
+
+
+    main section article .contenedorImagen{
+        height: 200px;
+        margin-right: 0px;
+
+    }
+    main section article .contenedorImagen img{
+        width: 250px;
+        margin-top: 20px;
+    }
+    main section article .contenedorTexto{
+        height: 200px;
+        width: 200px;
+    }
+    main section article .contenedorBoton{
+        height: min-content;
+    }
+    main section article .contenedorBoton a{
+        background-color: rgba(14, 185, 193, 1);
+        color: black;
+    }
+    main section article .contenedorBoton button{
+        background-color: rgba(14, 185, 193, 1);
+        color: black;
+    }
+
+    main section .contenedorSpan{
+        width: 95%;
+    }
+
+    main section article .contenedorTexto .tituloTexto span{
+        font-size: 16px;
+    }
+
+    main section article .contenedorTexto .contenidoTexto span{
+        font-size: 12px;
+    }
+
+    main section article .contenedorTexto .contenidoTexto{
+        align-items: end;
+    }
+}

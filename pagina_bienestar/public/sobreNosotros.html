@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/logoSenaBlanco.png" type="image/x-icon">
+    
+    <link href="css/style-pagina-principal.css" rel="stylesheet" />
+    <link href="css/sobreNosotros.css" rel="stylesheet" />
+    <title>Página Principal</title>
+</head>
+
+<body>
+    <!-- ............HEADER............ -->
+        <!-- Espacio En Blanco Superior -->
+            <div class="espacioEnBlanco"></div>
+        <!-- Header -->
+            <header>
+        <!-- Contenedor General Nav -->
+            <div class="titulo">
+        <!-- Contenedor De Los Logos -->
+                <div class="logoBienestar">
+                    <a href="/">
+                        <img src="img/logoSenaBlanco.png" class="logoSena" alt="">
+                        <div class="separadorLogos"></div>
+                        <img src="img/logoBienestar.png" alt="">
+                    </a>
+                </div>
+        <!-- Contenedor Hipervínculos -->
+                <div class="contenedorHrefs">
+                    <div class="hrefs">
+                        <li><a href="/servicios">Servicios</a></li>
+                        <li><a href="/apoyos">Apoyos</a></li>
+                        <li><a href="/eventos">Eventos</a></li>
+                    </div>
+                    <!-- Mini Contenedor logo usuario -->
+                    <div class="contenedorUserLogo">
+                        <a href="/login">
+                            <img src="img/user-circle-solid-36.png" alt="">
+                        </a>
+                    </div>
+                    <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
+                </div>
+
+        <!-- Menú Para Celulares -->
+                <div class="overlay" id="mobile-menu">
+                    <a onclick="closeNav() "href="#" class="close">&times;</a>
+                    <div class="overlay-content">
+                        <a href="/login">
+                            <img src="img/user-circle-solid-48.png" alt="">
+                        </a>
+                        <a href="/servicios">Servicios</a>
+                        <a href="/apoyos">Apoyos</a>
+                        <a href="/eventos">Eventos</a>
+                    </div>
+                </div>
+            </div>
+    </header>
+
+    <!-- CONTENIDO DE LA PÁGINA -->
+     <main>
+        <div class="tituloPagina">
+            <span>N O S O T R O S</span>
+        </div>
+        <section class="seccionImagenGrupal">
+            <div class="contenedorImagen">
+                <img src="img/equipoBienestarCDITI.jpg" alt="">
+            </div>
+        </section>
+        <div class="barraSeparadora"></div>
+        <section class="seccionInfoPersonas">
+            <article>
+                <div class="contenedorInfo">
+                    <img src="img/andres.png" alt="">
+                    <div class="info">
+                        <span class="nombre">Andrés Fernando Orozco</span>
+                        <span class="cargo">Apoyos de sostenimiento</span>
+                        <span class="telefono">Tel. 3115309815</span>
+                    </div>
+                </div>
+                <div class="contenedorInfo">
+                    <img src="img/beatriz.png" alt="">
+                    <div class="info">
+                        <span class="nombre">Beatriz Montealegre</span>
+                        <span class="cargo">Dinamizadora Bienestar</span>
+                        <span class="telefono">Tel. 31040221404</span>
+                    </div>
+                </div>
+                <div class="contenedorInfo">
+                    <img src="img/JuanCarlos.png" alt="">
+                    <div class="info">
+                        <span class="nombre">Juan Carlos Santos</span>
+                        <span class="cargo">Capellán</span>
+                        <span class="telefono">Tel. 3128705874</span>
+                    </div>
+                </div>
+                <div class="contenedorInfo">
+                    <img src="img/Carolina.png" alt="">
+                    <div class="info">
+                        <span class="nombre">Carolina Ayala</span>
+                        <span class="cargo">Enfermera Jefe</span>
+                        <span class="telefono">Tel. 3192261043</span>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <div class="contenedorInfo">
+                    <img src="img/Natalia.png" alt="">
+                    <div class="info">
+                        <span class="nombre">Natalia Arias</span>
+                        <span class="cargo">Aux. Enfermería</span>
+                        <span class="telefono">Tel. 3206981182</span>
+                    </div>
+                </div>
+
+                <div class="contenedorInfo">
+                    <img src="img/Laura.png" alt="">
+                    <div class="info">
+                        <span class="nombre">Laura Carmona</span>
+                        <span class="cargo">Psicóloga</span>
+                        <span class="telefono">Tel. 3013176532</span>
+                    </div>
+                </div>
+                <div class="contenedorInfo">
+                    <img src="img/Juliana.png" alt="">
+                    <div class="info">
+                        <span class="nombre">Juliana Gutiérres</span>
+                        <span class="cargo">Trabajadora Social</span>
+                        <span class="telefono">Tel. 3006512777</span>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <div class="contenedorInfo">
+                    <img src="img/JuanMartinez.png" alt="">
+                    <div class="info">
+                        <span class="nombre">Juan Carlos Martínez</span>
+                        <span class="cargo">Profesional Deportes</span>
+                        <span class="telefono">Tel. 3115566251</span>
+                    </div>
+                </div>
+                <div class="contenedorInfo">
+                    <img src="img/Roger.png" alt="">
+                    <div class="info">
+                        <span class="nombre">Roger Sail Marín</span>
+                        <span class="cargo">Profesional Cultura</span>
+                        <span class="telefono">Tel. 3154530095</span>
+                    </div>
+                </div>
+            </article>
+        </section>
+     </main>
+
+    <!-- .............FOOTER..............  -->
+        <!-- Contenedor Footer -->
+            <div class="contenedorFooter">
+                <footer>
+                    <section class="contenedorCajasBlancas">
+                        <div>C</div>
+                        <div>D</div>
+                        <div>I</div>
+                        <div>T</div>
+                        <div>I</div>
+                    </section>
+                </footer>
+            </div>
+
+        <!-- Espacio en blanco inferior -->
+            <div class="espacioEnBlanco"></div>
+    
+
+    
+    <script type="text/javascript" src="nav.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,308 @@
+/* Contenido Central de la página */
+main{
+    padding: 15px;
+}
+
+
+main .barraSeparadora{
+    width: 95vw;
+    height: 10px;
+    border-radius: 10px;
+    background: linear-gradient(148deg, rgba(67, 0, 118, 1) 10%, rgba(14, 185, 193, 1) 77%);;
+    margin: auto;
+    box-shadow: -2px 6px 30px 1px rgba(0,0,0,0.22);
+}
+/* ................SLIDER..................... */
+
+/* Contenedor del Slider */
+main .contenedorSlider{
+    width: 90vw;
+    max-width: 1366px;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+
+/* Espacio del Slider */
+main .contenedorSlider .slider{
+    width: 70%;
+    max-width: 1065px;
+    max-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* Media Query para pantalla grande */
+@media screen and (max-width: 1920px) {
+    main .contenedorSlider{
+        height: 500px;
+    }
+
+        
+}
+
+
+/* Posición del contenedor de las imágenes */
+main .contenedorSlider .position{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Imagenes */
+main .contenedorSlider .slider{
+    background-image: url(https://zajuna.sena.edu.co/img/banners/banner0-banner.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 80%;
+    width: 86.7%;
+    border-radius: 10px;
+    animation: animate 60s infinite;
+    box-shadow: -2px 6px 20px 9px rgba(0,0,0,0.22);
+}
+
+/* Animación del Slider */
+@keyframes animate{
+    20% {
+        background-image: url(https://zajuna.sena.edu.co/img/banners/banner4-banner.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    40% {
+        background-image: url(https://zajuna.sena.edu.co/img/banners/banner3-banner.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    60% {
+        background-image: url(https://zajuna.sena.edu.co/img/banners/banner2-banner.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    80% {
+        background-image: url(https://zajuna.sena.edu.co/img/banners/banner0-banner.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    100% {
+        background-image: url(https://zajuna.sena.edu.co/img/banners/banner3-banner.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+}
+
+/* Media Query Slider */
+@media screen and (max-width: 767px) {
+
+    main .contenedorSlider{
+        height: 220px;
+        width: 92vw;
+        
+    }
+
+    main .contenedorSlider .slider{
+        height: 61.96%;
+        width: 100%;
+    }
+    
+}
+/* ................SLIDER..................... */
+
+/* ................CARDS..................... */
+/* Contenedor general cards */
+main .contenedorApoyos{
+    width: 90vw;
+    max-width: 1366px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Cada una de las cajas */
+main .contenedorApoyos .cajaApoyo{
+    width: 340px;
+    min-width: 380px;
+    height: 340px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transform: rotate(2deg);
+    gap: 15px;
+    position: relative;
+    transition: .5s;
+}
+
+main .contenedorApoyos .cajaApoyo:hover{
+    transform: rotate(6deg);
+}
+/* Media querys para las cajas */
+@media screen and (max-width: 767px) {
+    main .contenedorApoyos .cajaApoyo{
+        width: 250px;
+        height: 250px;
+    }
+    main .contenedorApoyos{
+        gap: 100px;
+    }
+    
+    main .contenedorApoyos .cajaApoyo img{
+        box-shadow: -2px 6px 20px 9px rgba(0,0,0,0.22);
+    }
+
+}
+
+/* Texto de cada card */
+main .contenedorApoyos .cajaApoyo span{
+    color: black;
+    font-size: 23px;
+    font-weight:700;
+    letter-spacing: 5px;
+    text-shadow: 3px 2px 4px rgba(0,0,0,0.47);
+}
+/* Imagen de cada card */
+main .contenedorApoyos .cajaApoyo img{
+    width: 80%;
+    height: 80%;
+    border:3px solid rgba(14, 185, 193, 1);
+    border-radius: 15px;
+    object-fit:cover;
+    box-shadow: -2px 6px 20px 9px rgba(0,0,0,0.22);
+    transition: 1s;
+    cursor: pointer;
+}
+
+main .contenedorApoyos .cajaApoyo a{
+    width: 120px;
+    height: 40px;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom:2%;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 10px;
+    background: linear-gradient(60deg, rgba(67, 0, 118, 1) 18%, rgba(14, 185, 193, 1) 77%);
+    transition: 1s;
+}
+@media screen and (max-width: 767px){
+    main .contenedorApoyos .cajaApoyo a{
+        bottom: -5%;
+    }
+    main .barraSeparadora{
+        width: 92vw;
+    }
+}
+main .contenedorApoyos .cajaApoyo a:hover{
+    transform: scale(.9);
+}
+
+/* Hover de cada imagen */
+/* main .contenedorApoyos .cajaApoyo img:hover{
+    transform: scale(.9);
+} */
+
+/* Imagen pequeña de click */
+/* main .contenedorApoyos .cajaApoyo .imagenClick{
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    border: none;
+    box-shadow: none;
+} */
+/* ................CARDS..................... */
+/* ................VIDEO.................... */
+/* Contenedor video */
+main .video{
+    width: 90vw;
+    max-width: 1366px;
+    height: 520px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    margin-bottom: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Video Youtube */
+main .video iframe{
+    width: 75%;
+    height: 100%;
+    border-radius: 30px;
+    box-shadow: -2px 6px 20px 9px rgba(0,0,0,0.22);
+}
+
+/* Media Querys para el video */
+@media screen and (max-width: 767px) {
+    main .video{
+        width: 350px;
+        height: 198px;
+    }
+
+    main .video iframe{
+        width: 100%;
+        height: 100%;
+    }
+}
+/* ................VIDEO.................... */
+/* .............POST INSTAGRAM............. */
+main .instagramPost{
+    width: 90vw;
+    max-width: 1366px;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobreNosotros{
+    width: 160px;
+    height: 40px;
+    background: linear-gradient(148deg, rgba(67, 0, 118, 1) 18%, rgba(14, 185, 193, 1) 77%);
+    margin-bottom: 60px;
+    margin-top: 60px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    transition: 1s;
+
+}
+.sobreNosotros a{
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+
+}
+
+.sobreNosotros:hover{
+    width: 220px;
+}
+main .instagramPost .contenedorPost{
+    width: 540px;
+    box-shadow: -2px 6px 20px 9px rgba(0,0,0,0.22);
+}

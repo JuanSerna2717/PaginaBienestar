@@ -1,0 +1,374 @@
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    margin: 0; 
+
+}
+
+/* .................HEADER................. */
+header {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+
+}
+
+/* Media Query NavBar */
+@media screen and (max-width: 767px) {
+    header .titulo {
+        width: 96%;
+    }
+
+    header {
+        align-items: start;
+        height: 75px;
+    }
+
+    /* Logo De Bienestar */
+    header .titulo .logoBienestar img {
+        width: 100px;
+        height: 50px;
+        object-fit:contain;
+    }
+
+    /* Logo Blanca Del Sena */
+    header .titulo .logoBienestar .logoSena {
+        width: min-content;
+        height: 40px;
+    }
+    
+    /* Barra que separa los logos */
+    header .logoBienestar a .separadorLogos {
+        width: 2px;
+        height: 75%;
+        background-color: white;
+        margin: 0 10px 0px 10px;
+        
+    }
+
+
+}
+
+/* Contenido General Del Header */
+.titulo {
+    width: 99%;
+    height: 100%;
+    color: white;
+    background: rgb(67, 0, 118);
+    background: linear-gradient(148deg, rgba(67, 0, 118, 1) 18%, rgba(14, 185, 193, 1) 77%);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+}
+
+/* Contenedor De Los Logos */
+.titulo .logoBienestar {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 5px;
+}
+
+/* Hipervínculo De los Logos */
+.logoBienestar a {
+    display: flex;
+    align-items: center;
+    margin-left: 3%;
+    width: 100%;
+    height: 100%;
+}
+
+/* Barra vertical separadora */
+.logoBienestar a .separadorLogos {
+    width: 3px;
+    border-radius: 5px;
+    background-color: white;
+    margin: 0 15px 0px 15px;
+    height: 75%;
+}
+
+/* Imagen de bienestar */
+.titulo .logoBienestar img {
+    width: 150px;
+    height: 70px;
+    margin-bottom: 5px;
+    object-fit: contain;
+}
+
+/* Imagen blanca del sena */
+.titulo .logoBienestar .logoSena {
+    width: min-content;
+    height: 50px;
+}
+
+
+/* Contenedor Hipervínculos */
+.titulo .hrefs {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Lista De Los Hipervínculos */
+.titulo .hrefs li {
+    list-style: none;
+    transition: all .5s;
+}
+
+/* Estilos De Los Hipervínculos */
+.titulo .hrefs li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    transition: all 1s;
+}
+
+/* Estilos De Hover Para Los Hipervínculos*/
+.titulo .hrefs li:hover,
+.titulo .hrefs li a:hover{
+    color: yellow;
+    transform: scale(1.1);
+}
+.titulo .contenedorHrefs{
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    gap: 40px;
+    margin-right: 25px;
+}
+
+.titulo .contenedorHrefs .contenedorUserLogo{
+    width: 45px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    transition: .5s;
+    position: relative;
+}
+.titulo .contenedorHrefs .contenedorUserLogo ul{
+    list-style: none;
+    margin: 0;
+    width: 100px;
+    height: 20px;
+    padding: 0;
+    position:absolute;
+    top: 55px;
+    background-color: gray;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    display: none;
+    
+}
+
+
+
+.titulo .contenedorHrefs .contenedorUserLogo ul li a{
+    color: white;
+    font-weight: 600;
+    margin: 3px;
+}
+
+.titulo .contenedorHrefs .contenedorUserLogo:hover > ul{
+    display: block;
+    
+}
+.titulo .contenedorHrefs .contenedorUserLogo a{
+    width: min-content;
+    height: min-content;
+}
+
+.titulo .contenedorHrefs .contenedorUserLogo:hover{
+    transform: scale(1.3);
+    height: 200px;
+    margin-top: 20px;
+    justify-content: start;
+}
+
+
+/* Media Query Hipervínculos */
+@media screen and (max-width:800px) {
+    .titulo .contenedorHrefs .hrefs,
+    .titulo .contenedorHrefs .contenedorUserLogo {
+        display: none;
+    }
+
+    .titulo .contenedorHrefs .menu {
+        display: inherit;
+    }
+}
+
+
+header a {
+    text-decoration: none;
+}
+
+/* Estilos NavBar para celular */
+header .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background: rgb(67, 0, 118);
+    background: linear-gradient(148deg, rgba(67, 0, 118, 1) 18%, rgba(14, 185, 193, 1) 77%);
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+}
+
+/* Contenedor De Los Hipervínculos Para Pantalla Pequeña */
+header .overlay .overlay-content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilos Hipervínculos */
+header .overlay a{
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: all 0.3s ease 0s;
+    font-weight: bold;
+    color: white;
+    
+}
+header .overlay a img{
+    transition: .5s;
+}
+header .overlay a img:hover{
+    transform: scale(1.3);
+}
+
+/* Estilos De Hover Para el Texto */
+header .overlay a:hover,
+header .overlay a:focus {
+    color: yellow;
+}
+
+
+header .overlay .close {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 65px;
+}
+
+
+@media screen and (max-height: 450px) {
+    header .overlay a {
+        font-size: 20px;
+    }
+
+    header .overlay .close {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+/* Estilos Botón Menú */
+header .menu button {
+    font-weight: bold;
+    color: purple;
+    font-size: 15px;
+    padding: 9px 25px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 50px;
+}
+
+/* Cuando La Pantalla es de PC el botón no se muestra */
+.contenedorHrefs .menu {
+    display: none;
+}
+
+/* Estilos Del Botón Menú Con Hover */
+header .menu button:hover {
+    color: rgba(14, 185, 193, 1);
+    transform: scale(1.1);
+    border: 2px solid purple;
+}
+
+
+
+/* .................FOOTER................. */
+
+/* Contenedor del footer, ocupa todo el ancho pero no se ve */
+.contenedorFooter{
+    width: 100%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 30px;
+
+    
+    
+}
+/* Footer */
+.contenedorFooter footer{
+    width: 99%;
+    height: 100%;
+    background: rgb(67, 0, 118);
+    background: linear-gradient(148deg, rgba(67, 0, 118, 1) 18%, rgba(14, 185, 193, 1) 77%);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}   
+
+/* Texto temporal que dice "footer" */
+.contenedorFooter footer .contenedorCajasBlancas{
+    width: 400px;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+
+.contenedorFooter footer .contenedorCajasBlancas div{
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 20px;
+    text-shadow: 2px 4px 7px rgba(0,0,0,0.6);
+}
+
+/* Media Query Footer */
+@media screen and (max-width: 767px) {
+    .contenedorFooter footer {
+        width: 96%;
+    }
+}

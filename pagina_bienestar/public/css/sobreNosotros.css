@@ -1,0 +1,178 @@
+
+
+
+body{
+    overflow-x: hidden;
+}
+
+main{
+    width: 100vw;
+    max-width: 1366px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+main .barraSeparadora{
+    width: 95vw;
+    height: 10px;
+    border-radius: 10px;
+    background: linear-gradient(148deg, rgba(67, 0, 118, 1) 10%, rgba(14, 185, 193, 1) 77%);;
+    margin: auto;
+    box-shadow: -2px 6px 30px 1px rgba(0,0,0,0.3);
+}
+
+main .tituloPagina{
+    width: 90%;
+    height: max-content;
+    text-align: center;
+    margin: auto;
+}
+main .tituloPagina span{
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 1px 0px 7px rgba(0,0,0,0.6);
+}
+
+main .seccionImagenGrupal{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .seccionImagenGrupal .contenedorImagen{
+    width: max-content;
+    height: max-content;
+    width: 65%;
+    margin-top: 35px;
+    margin-bottom: 25px;
+    
+
+}
+
+main .seccionImagenGrupal .contenedorImagen img{
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: -2px 6px 30px 1px rgba(0,0,0,0.3);
+
+
+}
+
+
+
+
+main .seccionInfoPersonas{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 35px;
+}
+
+main .seccionInfoPersonas article{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+main .seccionInfoPersonas article .contenedorInfo{
+    height: 270px;
+    width: 270px;
+    min-width: 270px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: -2px 6px 30px 1px rgba(0,0,0,0.3);
+    transition: .5s;
+
+}
+
+main .seccionInfoPersonas article .contenedorInfo:hover{
+    transform: scale(0.95);
+}
+main .seccionInfoPersonas article .contenedorInfo img{
+    width: 100%;
+    height: 80%;
+    object-fit: contain;
+    filter: brightness(1.3);
+    filter: contrast(1.3);
+    /* position: relative; */
+    background: linear-gradient(60deg, rgba(67, 0, 118, 1) 18%, rgba(14, 185, 193, 1) 77%) ;
+}
+
+    
+/* main .seccionInfoPersonas article .contenedorInfo img::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index:-1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg red, blue,deeppink, blue, red, blue, deeppink,blue);
+    background-size: 100%;
+    border-radius: 10px;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+} */
+
+/* @keyframes glowing{
+    0%{
+        background-position: 0 0;
+    }
+
+    50%{
+        background-position: 400% 0;
+    }
+
+    100%{
+        background-position: 0 0;
+    }
+} */
+
+main .seccionInfoPersonas article .contenedorInfo .info{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+main .seccionInfoPersonas article .contenedorInfo .info .nombre{
+    font-weight: bold;
+}
+
+main .seccionInfoPersonas article .contenedorInfo .info .cargo{
+    font-size: 14px;
+}
+
+main .seccionInfoPersonas article .contenedorInfo .info .telefono{
+    font-size: 14px;
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+    main .seccionImagenGrupal .contenedorImagen{
+        width: max-content;
+        height: max-content;
+        width: 90%;
+        margin-top: 35px;
+        margin-bottom: 25px;
+    }
+
+    
+}

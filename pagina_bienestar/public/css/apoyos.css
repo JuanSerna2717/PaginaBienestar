@@ -1,0 +1,126 @@
+/*.apoyos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 5px; 
+    justify-items: center; 
+    align-items: center; 
+    margin-left: 0px;
+    margin-top: 30px; 
+}
+
+.apoyos img {
+    border-color: rgb(212, 28, 28) 9px 9px 20px 30px;
+    width: 85%; 
+    height: auto; 
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    border-radius: 15px; 
+    margin: 10px; 
+   /* box-shadow: 15px 2px 60px 5px rgba(87, 95, 87, 0.74);
+
+.apoyos img:hover {
+    transform: scale(1.05); 
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.apoyo-item {
+    width: 100%; 
+    max-width: 250px; 
+    height: auto; 
+    overflow: hidden; 
+    border-radius: 15px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.apoyo-item img {
+    width: 90%;
+    height: 90%;
+    object-fit: cover; 
+}
+
+.apoyos .apoyo1, .apoyo2, .apoyo3, .apoyo4, .apoyo5, .apoyo6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.apoyos a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .apoyos {
+        grid-template-columns: 1fr;
+        gap: 20px; 
+    }
+
+    .apoyo-item {
+        max-width: 100%; 
+    }
+}
+*/
+.apoyos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 30px; 
+    justify-items: center;
+    align-items: center;
+    padding: 0 10px; 
+    margin-top: 50px;
+    
+}
+
+.apoyos img {
+    width: 90%;
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 15px;
+    margin: 10px;
+    -webkit-box-shadow: 3px 0px 9px 1px rgba(0,0,0,0.77);
+    -moz-box-shadow: 3px 0px 9px 1px rgba(0,0,0,0.77);
+    box-shadow: 3px 0px 9px 1px rgba(0,0,0,0.77);
+    
+    
+}
+
+
+.apoyos img:hover {
+    transform: scale(1.05);
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.apoyo-item {
+    width: 90%; 
+    max-width: 300px;
+    height: auto;
+    overflow: hidden;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto; 
+}
+
+.apoyos a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none; 
+}
+
+@media (max-width: 768px) {
+    .apoyos {
+        grid-template-columns: 1fr; 
+        gap: 20px;
+        padding: 0 10px;
+    }
+
+    .apoyo-item {
+        max-width: 100%;
+    }
+}
+

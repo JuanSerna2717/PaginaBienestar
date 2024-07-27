@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    
+}
+
+.container {
+    width: 70%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    width: 48%;
+    background-color: #39a900;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #45a049;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.form-row .form-group {
+    width: 23%;
+}
+
+.info {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+#formulario::backdrop {
+    background-color: rgba(0, 0, 0, .55);
+}
+
+#formulario{
+    width: 50%;
+    height: auto;
+    border: none;
+    border-radius: 10px;
+    margin-top: 1.5%;
+}
+
+
+#btn-abrir-formulario{
+    /*background: linear-gradient(148deg, rgba(67, 0, 118, 1) 18%, rgba(14, 185, 193, 1) 77%);*/
+    background-color: #39a900;
+    border:none;
+    border-radius: 10px;
+    width: 170px;
+    height: 35px;
+    margin-top: 30px;
+    color: #f4f4f4;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+    color: #39a900;
+}
+
+/* Estilo para el dialog */
+dialog {
+    position: relative;
+    width: 60%;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    .form-row {
+        flex-wrap: wrap;
+    }
+    .form-row .form-group {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    input[type="submit"],
+    input[type="reset"] {
+        width: 100%;
+    }
+
+    #formulario{
+        width: 80vw;
+    }
+}
+
+
+.contenedorBotonVerde{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
